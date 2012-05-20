@@ -15,4 +15,5 @@ int main(int argc, char* argv[])
     mycos=dlsym(mlibhandle,"cos");
     printf("cos of 45 = %f",mycos(45));
     dlclose(mlibhandle);
+    
 }
