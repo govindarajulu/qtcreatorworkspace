@@ -8,11 +8,11 @@
 #include <dlfcn.h>
 int main(int argc, char* argv[])
 {
-    double (*mycos)(double m);
-    void *mlibhandle=dlopen("libm.so",RTLD_LAZY);
-    dlerror();
-
-    mycos=dlsym(mlibhandle,"cos");
-    printf("cos of 45 = %f",mycos(45));
-    dlclose(mlibhandle);
+pid_t pid;
+pid_t ppid;
+printf("before fork\n");
+printf("pid=%d,ppid=%d\n",(int)getpid(),(int)getppid());
+printf("after fork()\n");
+fork();
+printf("pid=%d,ppid=%d\n",(int)getpid(),(int)getppid());
 }
