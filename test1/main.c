@@ -15,4 +15,5 @@ printf("pid=%d,ppid=%d\n",(int)getpid(),(int)getppid());
 printf("after fork()\n");
 fork();
 printf("pid=%d,ppid=%d\n",(int)getpid(),(int)getppid());
+return 0;
 }
