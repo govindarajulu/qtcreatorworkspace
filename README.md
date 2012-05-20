@@ -1,0 +1,2 @@
+qtcreatorworkspace
+==================
