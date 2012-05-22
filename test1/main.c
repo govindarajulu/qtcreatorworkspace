@@ -13,13 +13,6 @@ int spawn(const char* program,const char** arglist){
 
 int main(int argc, char* argv[])
 {
-pid_t pid;
-pid_t ppid;
-printf("before fork\n");
-printf("pid=%d,ppid=%d\n",(int)getpid(),(int)getppid());
-printf("after fork()\n");
-fork();
-printf("pid=%d,ppid=%d\n",(int)getpid(),(int)getppid());
-//sleep(5);
+    char* arglist[]={"-l"};
 return 0;
 }
