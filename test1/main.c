@@ -8,6 +8,7 @@
 #include <dlfcn.h>
 
 int spawn(const char* program,const char** arglist){
+    int pid;
     pid=fork();
     if(pid==0){
         execvp(program,arglist);
