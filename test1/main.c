@@ -6,7 +6,7 @@
 #include <error.h>
 #include <string.h>
 #include <dlfcn.h>
-void foo(int *restrict p){
+void foo(const int *restrict p){
 
 }
 
