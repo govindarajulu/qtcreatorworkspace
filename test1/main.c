@@ -7,7 +7,7 @@
 #include <string.h>
 #include <dlfcn.h>
 
-int spawn(const char* program,const char* arglist[]){
+int spawn(const char* program,char* arglist[]){
     int pid;
     pid=fork();
     if(pid==0){
@@ -19,7 +19,7 @@ int spawn(const char* program,const char* arglist[]){
 
 int main(int argc, char* argv[])
 {
-    const char* arglist[]={"ls","-l"};
+    char* arglist[]={"ls","-l"};
     char* program="ls";
     spawn(program,arglist);
     return 0;
