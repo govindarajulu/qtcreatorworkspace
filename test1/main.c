@@ -21,6 +21,6 @@ int main(int argc, char* argv[])
 {
     char* arglist[]={"-l"};
     char* program="ls";
-
-return 0;
+    spawn(program,arglist);
+    return 0;
 }
