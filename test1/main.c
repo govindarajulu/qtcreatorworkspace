@@ -13,5 +13,6 @@ void foo(int * restrict p){
 int main(int argc, char* argv[])
 {
     int  p;
+    foo(&p);
     return 0;
 }
