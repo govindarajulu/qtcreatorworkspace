@@ -8,7 +8,7 @@
 #include <dlfcn.h>
 int main(int argc, char* argv[])
 {
-    int  restrict;
+    int  *restrict p;
     p=malloc(sizeof(int));
     return 0;
 }
