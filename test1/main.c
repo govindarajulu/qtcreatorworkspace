@@ -6,6 +6,11 @@
 #include <error.h>
 #include <string.h>
 #include <dlfcn.h>
+
+int spawn(const char* program,const char** arglist){
+
+}
+
 int main(int argc, char* argv[])
 {
 pid_t pid;
