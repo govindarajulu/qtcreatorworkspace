@@ -13,6 +13,5 @@ void foo(int * restrict p){
 int main(int argc, char* argv[])
 {
     int  p;
-    p=malloc(sizeof(int));
     return 0;
 }
