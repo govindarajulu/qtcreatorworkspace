@@ -12,7 +12,7 @@ void foo(int * restrict p){
 
 int main(int argc, char* argv[])
 {
-    int  *restrict p;
+    int  p;
     p=malloc(sizeof(int));
     return 0;
 }
