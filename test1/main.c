@@ -20,7 +20,7 @@ int spawn(const char* program,char* arglist[]){
 int main(int argc, char* argv[])
 {
     char* arglist[]={"ls","-l"};
-    char* program="ls";
+    const char* program="ls";
     spawn(program,arglist);
     return 0;
 }
