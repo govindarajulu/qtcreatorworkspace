@@ -16,7 +16,7 @@ void sig_handler(int sig_num){
     sigaction(SIGINT,&sa,NULL);
     printf("ctrl+c pressed!!!\n");
     ++count;
-    signal(sig_num,sig_handler);
+
 }
 
 int main(int argc, char* argv[])
