@@ -12,6 +12,7 @@ sig_atomic_t count=0;
 void sig_handler(int sig_num){
     printf("ctrl+c pressed!!!\n");
     ++count;
+    return;
 }
 
 int main(int argc, char* argv[])
