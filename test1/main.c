@@ -10,7 +10,7 @@
 
 sig_atomic_t count=0;
 void sig_handler(int sig_num){
-    sigaction(SIGINT,&sa,NULL);
+    signal(sig_num,&sig_handler);
     printf("ctrl+c pressed!!!\n");
     ++count;
     return;
