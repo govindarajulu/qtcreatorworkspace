@@ -9,7 +9,7 @@
 #include <signal.h>
 
 sig_atomic_t count=0;
-voice sig_handler(int sig_num){
+void sig_handler(int sig_num){
     printf("ctrl+c pressed!!!\n");
     ++count;
 }
