@@ -10,12 +10,6 @@
 
 sig_atomic_t count=0;
 void sig_handler(int sig_num){
-
-    struct sigaction sa;
-    memset(&sa,0,sizeof(sa));
-    sa.sa_handler=&sig_handler;
-    sa.sa_flags=0;
-    sigaction(SIGINT,&sa,NULL);
     printf("ctrl+c pressed!!!\n");
     ++count;
 }
@@ -26,6 +20,7 @@ int main(int argc, char* argv[])
     memset(&sa,0,sizeof(sa));
     sa.sa_handler=&sig_handler;
     sa.sa_flags=0;
+    sigemptyset(&sa.sa_mask);
     sigaction(SIGINT,&sa,NULL);
     printf("sleeping for 20 sec\n");
     sleep(20);
