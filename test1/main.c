@@ -10,6 +10,7 @@
 
 sig_atomic_t count=0;
 voice sig_handler(int sig_num){
+    printf("ctrl+c pressed!!!\n");
     ++count;
 }
 
@@ -17,4 +18,8 @@ int main(int argc, char* argv[])
 {
     struct sigaction sa;
     memset(&sa,0,sizeof(sa));
+    sa.sa_handler=&sig_handler;
+    sigaction(SIGTERM,&sa,NULL);
+    printf("sleeping for 20 sec\n");
+    sleep(20);
 }
