@@ -11,6 +11,7 @@
 sig_atomic_t count=0;
 void sig_handler(int sig_num){
     printf("ctrl+c pressed!!!\n");
+    printf("sig_num=%d",sig_num);
     ++count;
 }
 
