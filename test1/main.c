@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
     struct sigaction sa;
     memset(&sa,0,sizeof(sa));
     sa.sa_handler=&sig_handler;
-    sa.sa_flags=SA_RESTART;
+    sa.sa_flags=0;
     sigaction(SIGINT,&sa,NULL);
     printf("sleeping for 20 sec\n");
     sleep(20);
