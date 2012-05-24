@@ -6,13 +6,15 @@
 #include <error.h>
 #include <string.h>
 #include <dlfcn.h>
-void foo(const int *restrict p){
+#include <signal.h>
 
+sig_atomic_t count=0;
+voice sig_handler(int sig_num){
+    ++count;
 }
 
 int main(int argc, char* argv[])
 {
-    int  p;
-    foo(&p);
-    return 0;
+    struct sigaction sa;
+    memset(&sa,0,sizeof(sa));
 }
