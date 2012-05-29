@@ -2,7 +2,8 @@
 #include <pthread.h>
 void* thread(void* nouse){
     while(1){
-        printf("x");
+        int i;
+        i++;
     }
     pthread_exit(NULL);
 }
@@ -11,6 +12,8 @@ main(){
     pthread_t id;
     pthread_create(&id,NULL,*thread,NULL);
     while(1){
-        printf("y");
+        int j;
+        j++
+        //printf("y");
     }
 }
