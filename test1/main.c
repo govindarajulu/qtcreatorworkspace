@@ -11,5 +11,5 @@ char* thread(void* nouse){
 main(){
     char *a;
     a=thread(NULL);
-    printf("d%s\n",a);
+    printf("%s\n",a);
 }
