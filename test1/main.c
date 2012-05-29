@@ -29,6 +29,7 @@ int main(int argc, char* argv[])
     //sigaction(SIGCHLD,&sa,NULL);
     pid=fork();
     if(pid==0){
+        printf("child process-%d\n",getpid());
         exit(0);
     }
     printf("sleeping for 20 sec\n%d",pid);
