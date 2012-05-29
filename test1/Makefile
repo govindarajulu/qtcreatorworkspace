@@ -1,5 +1,5 @@
 all:
-    gcc -o test1 main.c -lpthread
+    echo hello
 
 clean:
     rm test1
