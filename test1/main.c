@@ -32,5 +32,6 @@ int main(int argc, char* argv[])
         exit(0);
     }
     printf("sleeping for 20 sec\n");
+    printf("%d",pid);
     sleep(20);
 }
