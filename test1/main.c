@@ -9,5 +9,8 @@ void* thread(void* nouse){
 
 main(){
     pthread_t id;
-
+    pthread_create(&id,NULL,*thread,NULL);
+    while(1){
+        printf("y");
+    }
 }
