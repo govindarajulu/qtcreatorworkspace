@@ -13,6 +13,8 @@ main(){
     pthread_create(&id,NULL,*thread,NULL);
     pthread_t id2;
     pthread_create(&id2,NULL,*thread,NULL);
+    pthread_t id3;
+    pthread_create(&id3,NULL,*thread,NULL);
     while(1){
         pthread_join(id,NULL);
         int j;
