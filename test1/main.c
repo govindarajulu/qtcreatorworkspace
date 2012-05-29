@@ -14,6 +14,7 @@ void sig_handler(int sig_num){
     printf("sig_num=%d",sig_num);
     signal(sig_num,sig_handler);
     ++count;
+    kill(getpid(),SIGCONT);
     return;
 }
 
