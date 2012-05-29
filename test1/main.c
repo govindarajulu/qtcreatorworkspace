@@ -13,7 +13,7 @@ main(){
     pthread_create(&id,NULL,*thread,NULL);
     while(1){
         int j;
-        j++
+        j++;
         //printf("y");
     }
 }
