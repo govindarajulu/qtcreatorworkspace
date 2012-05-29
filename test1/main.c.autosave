@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <pthread.h>
+#include <string
+char* thread(void* nouse){
+    char a[10];
+    str
+}
+
+main(){
+    pthread_t id;
+    pthread_create(&id,NULL,*thread,NULL);
+    pthread_t id2;
+    pthread_create(&id2,NULL,*thread,NULL);
+    pthread_t id3;
+    pthread_create(&id3,NULL,*thread,NULL);
+    while(1){
+        pthread_join(id,NULL);
+        int j;
+        j++;
+        //printf("y");
+    }
+}
