@@ -1,5 +1,5 @@
 all:
-    echo hello
+    echo "hello"
 
 clean:
     rm test1
