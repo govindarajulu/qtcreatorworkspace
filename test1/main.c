@@ -10,7 +10,7 @@ char* thread(void* nouse){
 }
 
 main(){
-    char *a;
+    int *a;
     a=thread(NULL);
     printf("%s\n",a);
 }
