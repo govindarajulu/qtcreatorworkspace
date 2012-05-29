@@ -32,6 +32,6 @@ int main(int argc, char* argv[])
         printf("child process-%d\n",getpid());
         exit(0);
     }
-    printf("sleeping for 20 sec\n%d",pid);
+    printf("sleeping for 20 sec\n%d\n",pid);
     sleep(20);
 }
