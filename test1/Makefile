@@ -1,4 +1,4 @@
-all:
+all: d
     echo "hello"
 
 clean:
