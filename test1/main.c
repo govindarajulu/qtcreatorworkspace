@@ -12,6 +12,7 @@ main(){
     pthread_t id;
     pthread_create(&id,NULL,*thread,NULL);
     while(1){
+        pthread_join(id,NULL);
         int j;
         j++;
         //printf("y");
