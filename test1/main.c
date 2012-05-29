@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
     pid=fork();
     if(pid==0){
         printf("child process-%d\n",getpid());
-        exit(13);
+        exit(128);
     }
     printf("sleeping for 20 sec\n%d\n",pid);
     wait(&exitstatus);
