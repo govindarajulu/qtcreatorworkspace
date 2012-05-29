@@ -4,6 +4,7 @@
 char* thread(void* nouse){
     char a[10];
     strcpy(a,"poison");
+    printf("a=%s\n",a);
     return a;
 }
 
