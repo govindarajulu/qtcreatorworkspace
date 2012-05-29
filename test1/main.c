@@ -21,11 +21,16 @@ void sig_handler(int sig_num){
 int main(int argc, char* argv[])
 {
     struct sigaction sa;
+    int pid;
     memset(&sa,0,sizeof(sa));
     sa.sa_handler=sig_handler;
     sa.sa_flags=SA_RESTART;
     sigemptyset(&sa.sa_mask);
-    sigaction(SIGINT,&sa,NULL);
+    sigaction(SIGCHLD,&sa,NULL);
+    pid=fork();
+    if(pid==0){
+        exit(0);
+    }
     printf("sleeping for 20 sec\n");
     sleep(20);
 }
