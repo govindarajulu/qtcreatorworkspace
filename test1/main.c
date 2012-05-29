@@ -34,5 +34,6 @@ int main(int argc, char* argv[])
     }
     printf("sleeping for 20 sec\n%d\n",pid);
     wait(&exitstatus);
+    printf("exit status = %d\n",WEXITSTATUS(exitstatus));
     sleep(20);
 }
