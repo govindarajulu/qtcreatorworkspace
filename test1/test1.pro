@@ -7,5 +7,5 @@ SOURCES += main.c
 
 
 
-OTHER_FILES += \
-    Makefile
+OTHER_FILES +=
+QMAKE_LIBS_THREAD	= -lpthread
