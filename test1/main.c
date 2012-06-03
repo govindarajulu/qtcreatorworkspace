@@ -9,6 +9,8 @@ void* thread(void* nouse){
 
 main(){
     pthread_t th;
-    pthread_attr_t attr;
+    pthread_attr_t th_attr;
+    struct sched_param th_sched;
     pthread_attr_init(&attr);
+    pthread_attr_setschedparam()
 }
