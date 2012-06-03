@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <string.h>
-char* thread(void* nouse){
-    char a[10];
-    strcpy(a,"poison");
-    printf("a=%s\n",a);
-    return a;
+void* thread(void* nouse){
+    return NULL;
 }
 
 main(){
