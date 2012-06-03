@@ -14,4 +14,12 @@ main(){
     th_sched.__sched_priority=1;
     pthread_attr_init(&th_attr);
     pthread_attr_setschedparam(&th_attr,&th_sched);
+
+
+    pthread_t th1;
+    pthread_attr_t th_attr1;
+    struct sched_param th_sched1;
+    th_sched.__sched_priority=10;
+    pthread_attr_init(&th_attr1);
+    pthread_attr_setschedparam(&th_attr1,&th_sched1);
 }
