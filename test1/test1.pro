@@ -2,4 +2,4 @@ TEMPLATE = app
 CONFIG += console
 CONFIG -= qt
 SOURCES += main.c
-QMAKE_LIBS	= -lpthread
+QMAKE_LIBS_QT	= -lpthread
