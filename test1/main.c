@@ -6,7 +6,9 @@ void* thread(void* nouse){
 }
 
 main(){
-    pthread_t th;
+    pthread_t th,th1;
     th=pthread_create(&th,NULL,thread,NULL);
+    th1=pthread_create(&th,NULL,thread,NULL);
     printf("th id in main()=%d",(int)th);
+    printf("th1 id in main()=%d",(int)th1);
 }
