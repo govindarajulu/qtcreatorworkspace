@@ -3,8 +3,9 @@
 #include <string.h>
 #include <error.h>
 void* thread(void* nouse){
-    printf("th in thread %d\n",pthread_self());
-    return NULL;
+    while(1){
+        printf("%d\n",pthread_self());
+    }
 }
 
 main(){
