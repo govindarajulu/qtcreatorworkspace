@@ -25,5 +25,7 @@ main(){
     pthread_attr_setschedparam(&th_attr1,&th_sched1);
 
     pthread_create(&th,&th_attr,thread,NULL);
+    perror("pthread_create");
     pthread_create(&th1,&th_attr1,thread,NULL);
+    pthread_join(th,NULL);
 }
